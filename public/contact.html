@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EnviroTrack</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Reserved space for user's header and icon -->
+    <div class="reserved-header"></div>
+
+    <!-- Main tagline header matching the login page -->
+    <h1>Where campus tidiness meets ease of use</h1>
+
+    <!-- Horizontal Navigation Menu -->
+    <nav class="horizontal-nav">
+        <a href="dashboard.html" class="nav-btn">Home</a>
+        <a href="upload-photo.html" class="nav-btn">Upload a photo</a>
+        <a href="pictures.html" class="nav-btn">Your pictures</a>
+        <a href="rewards.html" class="nav-btn">Rewards</a>
+        <a href="contact.html" class="nav-btn active">Contact us</a>
+    </nav>
+
+    <!-- Centered Container -->
+    <main class="dashboard-container">
+        <div class="dashboard-island">
+            <h2 class="welcome-title">Contact Us</h2>
+            <p class="subtitle">Have any questions or suggestions? We'd love to hear from you.</p>
+
+            <form id="contactForm" class="subpage-form" onsubmit="event.preventDefault(); alert('Message sent! We will get back to you soon.');">
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" placeholder="e.g., Question about rewards" required class="glass-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" placeholder="Write your message here..." rows="4" required class="glass-input"></textarea>
+                </div>
+
+                <button type="submit" class="submit-action-btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Firebase App & Auth SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

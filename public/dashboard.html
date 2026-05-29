@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EnviroTrack</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Reserved space for user's header and icon, completely untouched by margins -->
+    <div class="reserved-header">
+        <!-- Will contain App logo, App name, and tagline/caption later -->
+    </div>
+
+    <!-- Main tagline header matching the login page -->
+    <h1>Where campus tidiness meets ease of use</h1>
+
+    <!-- Horizontal Navigation Menu -->
+    <nav class="horizontal-nav">
+        <a href="dashboard.html" class="nav-btn active">Home</a>
+        <a href="upload-photo.html" class="nav-btn">Upload a photo</a>
+        <a href="pictures.html" class="nav-btn">Your pictures</a>
+        <a href="rewards.html" class="nav-btn">Rewards</a>
+        <a href="contact.html" class="nav-btn">Contact us</a>
+    </nav>
+
+    <!-- Centered Student Dashboard Container -->
+    <main class="dashboard-container">
+        <div class="dashboard-island">
+            <h2 class="welcome-title">Welcome Back, <span id="welcomeUser">Explorer</span>! 👋</h2>
+            <p class="subtitle">Here is your EnviroTrack profile status</p>
+            
+            <div class="user-profile-card">
+                <div class="profile-pic-wrapper">
+                    <img id="profilePic" src="" alt="Profile Picture">
+                </div>
+                <div class="profile-details">
+                    <h3 id="profileName">User Name</h3>
+                    <p id="profileEmail">user@example.com</p>
+                </div>
+                <div class="success-badge">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Authenticated Successfully</span>
+                </div>
+                <button id="logoutBtn" class="logout-btn">Sign Out</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Firebase App & Auth SDKs (v9 compatibility build) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

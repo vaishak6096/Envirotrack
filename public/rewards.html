@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards - EnviroTrack</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Reserved space for user's header and icon -->
+    <div class="reserved-header"></div>
+
+    <!-- Main tagline header matching the login page -->
+    <h1>Where campus tidiness meets ease of use</h1>
+
+    <!-- Horizontal Navigation Menu -->
+    <nav class="horizontal-nav">
+        <a href="dashboard.html" class="nav-btn">Home</a>
+        <a href="upload-photo.html" class="nav-btn">Upload a photo</a>
+        <a href="pictures.html" class="nav-btn">Your pictures</a>
+        <a href="rewards.html" class="nav-btn active">Rewards</a>
+        <a href="contact.html" class="nav-btn">Contact us</a>
+    </nav>
+
+    <!-- Centered Container -->
+    <main class="dashboard-container">
+        <div class="dashboard-island">
+            <h2 class="welcome-title">Your Rewards</h2>
+            <p class="subtitle">Redeem your sustainability points for eco-friendly campus gifts</p>
+
+            <div class="points-balance-card">
+                <span class="points-label">Current Balance</span>
+                <span class="points-val">150 pts</span>
+            </div>
+
+            <div class="rewards-list">
+                <!-- Reward Item 1 -->
+                <div class="reward-item">
+                    <div class="reward-desc">
+                        <h4>Free Coffee at Campus Cafe</h4>
+                        <p class="cost">100 points required</p>
+                    </div>
+                    <button class="redeem-btn" onclick="alert('Reward redeemed! Check your email for code.');">Redeem</button>
+                </div>
+
+                <!-- Reward Item 2 -->
+                <div class="reward-item">
+                    <div class="reward-desc">
+                        <h4>EnviroTrack Reusable Sticker</h4>
+                        <p class="cost">50 points required</p>
+                    </div>
+                    <button class="redeem-btn" onclick="alert('Reward redeemed! Check your email for code.');">Redeem</button>
+                </div>
+
+                <!-- Reward Item 3 -->
+                <div class="reward-item locked">
+                    <div class="reward-desc">
+                        <h4>Eco-Friendly Water Flask</h4>
+                        <p class="cost">500 points required</p>
+                    </div>
+                    <button class="redeem-btn" disabled>Locked</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Firebase App & Auth SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
